@@ -7,7 +7,7 @@ $ mvn jetty:run
 测试请求：
 
 ```bash
-$ http localhost:8080/app/foo
+$ http localhost:8080/foo
 HTTP/1.1 200 OK
 Content-Length: 13
 Content-Type: application/octet-stream
