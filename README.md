@@ -18,3 +18,28 @@ Hello, world!
 
 $
 ```
+
+## Reproducer
+
+```bash
+$ http POST localhost:8080/foo/cool
+HTTP/1.1 500 Server Error
+Content-Length: 4
+Content-Type: application/octet-stream
+Date: Wed, 17 Jun 2020 10:32:41 GMT
+Server: Jetty(9.4.17.v20190418)
+
+COOL
+```
+
+```bash
+$ http POST localhost:8080/foo/boom
+HTTP/1.1 500 Server Error
+Content-Length: 0
+Date: Wed, 17 Jun 2020 10:34:05 GMT
+Server: Jetty(9.4.17.v20190418)
+
+
+
+$
+```

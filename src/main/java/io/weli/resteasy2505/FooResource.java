@@ -25,4 +25,12 @@ public class FooResource {
         return Response.serverError().entity(null).build();
     }
 
+    @POST
+    @Path("cool")
+    public Response cool() {
+        return Response.serverError().entity("COOL").build();
+    }
+
+
+
 }
