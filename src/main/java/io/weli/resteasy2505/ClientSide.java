@@ -19,9 +19,10 @@ public class ClientSide {
         ResteasyWebTarget target = client.target("http://localhost:8080/foo");
 
         FooInterface foo = target.proxy(FooInterface.class);
-        foo.empty();
-        Response resp = foo.cool();
-        System.out.println(resp.readEntity(String.class));
+//        foo.empty();
+//        Response resp = foo.cool();
+//        System.out.println(resp.readEntity(String.class));
+        foo.v0id();
 
     }
 }
