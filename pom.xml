@@ -31,6 +31,16 @@
             <artifactId>resteasy-core-spi</artifactId>
             <version>${resteasy.version}</version>
         </dependency>
+        <dependency>
+            <groupId>org.jboss.resteasy</groupId>
+            <artifactId>resteasy-client</artifactId>
+            <version>${resteasy.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.jboss.resteasy</groupId>
+            <artifactId>resteasy-client-api</artifactId>
+            <version>${resteasy.version}</version>
+        </dependency>
         <!--        <dependency>-->
         <!--            <groupId>org.jboss.resteasy</groupId>-->
         <!--            <artifactId>resteasy-core-spi</artifactId>-->

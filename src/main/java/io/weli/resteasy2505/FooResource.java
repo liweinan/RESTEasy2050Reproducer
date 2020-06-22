@@ -7,7 +7,7 @@ import javax.ws.rs.WebApplicationException;
 import javax.ws.rs.core.Response;
 
 @Path("/foo")
-public class FooResource {
+public class FooResource implements FooInterface {
     @GET
     @Path("/dummy")
     public String dummy() {
@@ -19,18 +19,18 @@ public class FooResource {
         return "Hello, foo!";
     }
 
-    @POST
-    @Path("boom")
-    public Response boom() {
+    /*
+     * $ http POST localhost:8080/foo/empty
+     */
+    public Response empty() {
         return Response.serverError().entity(null).build();
     }
 
-    @POST
-    @Path("cool")
+
+    /*
+     * $ http POST localhost:8080/foo/cool
+     */
     public Response cool() {
         return Response.serverError().entity("COOL").build();
     }
-
-
-
 }
