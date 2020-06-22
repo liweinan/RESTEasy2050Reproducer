@@ -22,6 +22,7 @@ public class FooResource implements FooInterface {
     /*
      * $ http POST localhost:8080/foo/empty
      */
+    @Deprecated
     public Response empty() {
         return Response.serverError().entity(null).build();
     }
@@ -32,5 +33,14 @@ public class FooResource implements FooInterface {
      */
     public Response cool() {
         return Response.serverError().entity("COOL").build();
+    }
+
+    @Override
+    /*
+     * $ http POST localhost:8080/foo/v0id
+     */
+    public void v0id() {
+        // directly throw exception.
+        throw new WebApplicationException("v0id");
     }
 }

@@ -8,6 +8,7 @@ public interface FooInterface {
     /*
      * $ http POST localhost:8080/foo/boom
      */
+    @Deprecated
     @POST
     @Path("empty")
     Response empty();
@@ -19,5 +20,12 @@ public interface FooInterface {
     @POST
     @Path("cool")
     Response cool();
+
+    /*
+     * $ http POST localhost:8080/foo/v0id
+     */
+    @POST
+    @Path("v0id")
+    void v0id();
 
 }

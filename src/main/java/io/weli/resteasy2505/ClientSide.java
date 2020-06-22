@@ -9,6 +9,9 @@ import javax.ws.rs.core.Response;
 /*
  * Start server firstly:
  * $ mvn jetty:run
+ * Using Debug Option:
+ * $ export MAVEN_OPTS='-Xdebug -Xnoagent -Xrunjdwp:transport=dt_socket,server=y,suspend=y,address=5005'
+ *
  */
 public class ClientSide {
     public static void main(String[] args) {
