@@ -21,7 +21,13 @@ public class ClientSide {
 //        foo.empty();
 //        Response resp = foo.cool();
 //        System.out.println(resp.readEntity(String.class));
-        foo.v0id();
 
+//        foo.v0id();
+
+        try {
+            foo.v0id2();
+        } catch (Exception e) {
+            System.out.println(e);
+        }
     }
 }

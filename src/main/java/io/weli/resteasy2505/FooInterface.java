@@ -28,4 +28,11 @@ public interface FooInterface {
     @Path("v0id")
     void v0id();
 
+    /*
+     * $ http POST localhost:8080/foo/v0id2
+     */
+    @POST
+    @Path("v0id2")
+    Response v0id2();
+
 }

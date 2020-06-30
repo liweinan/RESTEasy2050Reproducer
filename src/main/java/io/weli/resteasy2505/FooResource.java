@@ -44,4 +44,15 @@ public class FooResource implements FooInterface {
         // directly throw exception.
         throw new WebApplicationException("v0id");
     }
+
+    @Override
+    /*
+     * $ http POST localhost:8080/foo/v0id2
+     *
+     */
+    public Response v0id2() {
+        // directly throw exception.
+        throw new WebApplicationException("v0id2");
+    }
+
 }
