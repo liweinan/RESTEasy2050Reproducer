@@ -38,6 +38,7 @@ public class FooResource implements FooInterface {
     @Override
     /*
      * $ http POST localhost:8080/foo/v0id
+     * Reproducer: Because the return type is `void`, so we can't get `v0id` encapsulated in `WebApplicationException`.
      */
     public void v0id() {
         // directly throw exception.
