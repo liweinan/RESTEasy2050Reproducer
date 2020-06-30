@@ -4,7 +4,6 @@ import org.jboss.resteasy.client.jaxrs.ResteasyClient;
 import org.jboss.resteasy.client.jaxrs.ResteasyWebTarget;
 
 import javax.ws.rs.client.ClientBuilder;
-import javax.ws.rs.core.Response;
 
 /*
  * Start server firstly:
