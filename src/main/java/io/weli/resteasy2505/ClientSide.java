@@ -29,7 +29,6 @@ public class ClientSide {
             Response resp = foo.v0id2();
             System.out.println(resp.getStatus());
             System.out.println(resp.readEntity(String.class));
-
         } catch (Exception e) {
             System.out.println(e);
         }
