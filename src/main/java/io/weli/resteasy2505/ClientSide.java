@@ -4,6 +4,7 @@ import org.jboss.resteasy.client.jaxrs.ResteasyClient;
 import org.jboss.resteasy.client.jaxrs.ResteasyWebTarget;
 
 import javax.ws.rs.client.ClientBuilder;
+import javax.ws.rs.core.Response;
 
 /*
  * Start server firstly:
@@ -25,9 +26,14 @@ public class ClientSide {
 //        foo.v0id();
 
         try {
-            foo.v0id2();
+            Response resp = foo.v0id2();
+            System.out.println(resp.getStatus());
+            System.out.println(resp.readEntity(String.class));
+
         } catch (Exception e) {
             System.out.println(e);
         }
+
+
     }
 }
